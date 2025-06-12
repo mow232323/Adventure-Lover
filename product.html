@@ -1,0 +1,81 @@
+</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Adventure Lover - All Products</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">Adventure Lover</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section id="products" class="container my-5">
+    
+    <h2 class="mb-4 text-center">All Products</h2>
+    <div class="container">
+      <header>
+        
+        <div class="shopping">
+          <img src="img/cart.svg" alt="Shopping Cart Icon">
+          <span class="quantity">0</span>
+        </div>
+      </header>
+      <div class="list"></div>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="card" style="max-width: 400px; margin: 20px auto;">
+      <div class="card-header text-center fw-bold fs-4">
+        Your Cart
+      </div>
+      <ul class="listCard list-group list-group-flush" style="min-height: 200px; max-height: 300px; overflow-y: auto;"></ul>
+      <div class="card-body d-flex flex-column gap-3">
+        <div class="d-flex justify-content-between align-items-center fs-5">
+          <span>Total:</span>
+          <span class="total">0</span>
+        </div>
+        <button class="checkoutButton btn btn-primary w-100">Check Out</button>
+        <button class="closeShopping btn btn-secondary w-100">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <div class="footer-social mb-3">
+        <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 CampEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="products.js"></script> <!-- Ensure filename matches your JS file -->
+</body>
+</html>

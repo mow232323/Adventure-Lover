@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Adventure Lovwe - Outdoor Gear</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">Adventure Lover</a>
+      
+       
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slideshow Section with overlay -->
+  <section class="slideshow-section">
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img src="img/Exo Mtn Gear K3 Review.jpg" alt="Camping Gear" class="clear-image">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Explore Best Camping Gear</h1>
+          <p>High-quality camping equipment for your next adventure</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/main home.jpg" alt="Adventure Place View 1" class="clear-image">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Adventure Place View</h1>
+          <p>Experience the beauty of nature at our adventure spots</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/main home2.avif" alt="Adventure Place View 2" class="clear-image">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Scenic Camping Locations</h1>
+          <p>Find your perfect spot surrounded by breathtaking views</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/home1.jpg" alt="Adventure Place View 3" class="clear-image">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Unforgettable Outdoor Experiences</h1>
+          <p>Make memories that last a lifetime in the great outdoors</p>
+        </div>
+      </div>
+      <!-- Navigation controls -->
+      <button class="prev-slide btn btn-dark">&#10094;</button>
+      <button class="next-slide btn btn-dark">&#10095;</button>
+      <!-- Slide indicators -->
+      <div class="slide-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="product.html" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+  </section>
+
+
+
+  <!-- Camping Tips Section -->
+  <section id="camping-tips" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center fw-bold">Camping Tips</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-fire fa-3x mb-3 text-primary"></i>
+          <h5>Build a Safe Fire</h5>
+          <p>Always clear the area and keep water nearby when building a campfire.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-map-marked-alt fa-3x mb-3 text-primary"></i>
+          <h5>Know Your Location</h5>
+          <p>Carry a map and compass or GPS device to avoid getting lost.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-hiking fa-3x mb-3 text-primary"></i>
+          <h5>Pack Light</h5>
+          <p>Bring only essentials to keep your backpack manageable and comfortable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-5">
+    <h2 class="mb-4 text-center fw-bold">Special Products</h2>
+    <div id="product-list" class="d-flex flex-wrap justify-content-center gap-4">
+      <div class="item_card shadow-lg">
+        <img src="img/bag3.jpg" class="card-img-top clear-image" alt="Camping Bag">
+        <div class="card-body text-center">
+          <h5 class="card-title">Camping Bag</h5>
+          <p class="card-text">$49.99</p>
+          <a href="product.html" class="btn btn-sm btn-primary w-100" data-product-id="bag">More</a>
+        </div>
+      </div>
+
+      <div class="item_card shadow-lg">
+        <img src="img/tent31.jpg" class="card-img-top clear-image" alt="Tent">
+        <div class="card-body text-center">
+          <h5 class="card-title">4-Person Tent</h5>
+          <p class="card-text">$129.99</p>
+          <a href="product.html" class="btn btn-sm btn-primary w-100">More</a>
+        </div>
+      </div>
+
+      <div class="item_card shadow-lg">
+        <img src="img/tool.jpg" class="card-img-top clear-image" alt="Tool Kit">
+        <div class="card-body text-center">
+          <h5 class="card-title">Camping Tool Kit</h5>
+          <p class="card-text">$29.99</p>
+          <a href="product.html" class="btn btn-sm btn-primary w-100">More</a>
+        </div>
+      </div>
+
+      <div class="item_card shadow-lg">
+        <img src="img/cook3.jpg" class="card-img-top clear-image" alt="Cookware Set">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cookware Set</h5>
+          <p class="card-text">$39.99</p>
+          <a href="product.html" class="btn btn-sm btn-primary w-100">More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+        
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <div class="footer-social mb-3">
+        <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 CampEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

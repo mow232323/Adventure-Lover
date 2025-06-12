@@ -1,0 +1,525 @@
+/* New style for Special Products section */
+#product-list.grid-style {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+/* Responsive Photo Notes Section */
+.photo-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+.photo-note.card {
+  width: 100% !important;
+  max-width: 300px;
+}
+
+#product-list.grid-style .item_card {
+  width: 100%;
+  max-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#product-list.grid-style .item_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+#product-list.grid-style .item_card img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+#product-list.grid-style .card-body {
+  text-align: center;
+}
+
+#product-list.grid-style .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+#product-list.grid-style .card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+/* Toggle button customization (optional) */
+.navbar{
+   background: linear-gradient(to bottom, #000000, #ffffff)!important; 
+}
+
+/* .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 255, 255, 0.7 %29)' (stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} */
+
+/* Responsive spacing for smaller devices */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.slideshow-section {
+    position: relative;
+    margin: 2rem 0rem;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.slide
+ {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: scale(0.98);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-content {
+    position: absolute;
+   
+    max-width: 1500px;
+    padding: 2rem;
+    
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    transform: translateY(20px);
+    transition: transform 0.5s ease 0.3s;
+    text-align: center;
+}
+.slide{
+display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  height: 100vh; 
+}
+
+.slide.active .slide-content {
+    transform: translateY(0);
+}
+
+.slide h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.slide p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Cards */
+.card-img-top {
+  height: auto;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+}
+
+/* Container for main content */
+.container {
+    width: 90%; /* Make it more fluid */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 50px auto; /* Center with top margin */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for container transform */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for header */
+    justify-content: space-between; /* Space out title and shopping cart */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 40px; /* Space below header */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700; /* Bolder font */
+    color: #212529; /* Even darker grey for heading */
+}
+
+header .shopping {
+    position: relative;
+    cursor: pointer; /* Indicate clickable */
+    padding: 10px; /* Add padding for easier clicking */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+header .shopping:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover effect */
+}
+
+header .shopping img {
+    width: 40px;
+    filter: invert(15%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Make SVG black */
+}
+
+header .shopping span {
+    background: #FF6B6B; /* Soft red/coral for quantity */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -8px; /* Adjust position */
+    right: -8px; /* Adjust position */
+    padding: 5px 10px; /* More padding for better look */
+    font-size: 0.8rem; /* Smaller font size */
+    min-width: 25px; /* Ensure it's a circle even with single digit */
+    height: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+#pd_img{
+    height: 60%;
+}
+#product-list{
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.item_card{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 15px;
+  width: 20%;
+  min-width: 250px;
+}
+/* Product List Styles */
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px; /* More consistent spacing */
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #FFFFFF; /* White background for items */
+    padding: 25px; /* More padding */
+    border-radius: 12px; /* Rounded corners for items */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced, stronger shadow */
+    letter-spacing: 0.5px; /* Slightly less letter spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list .item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+.list .item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* New class for clearer images */
+.clear-image {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Style for Add to Cart button */
+.add-to-cart-btn {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Shopping Cart Sidebar Styles */
+.card {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 400px;
+    max-width: 90vw;
+    background-color: #212529;
+    max-height: 90vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 2000;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 10px;
+}
+.card.active {
+    display: flex;
+}
+
+/* Active state for card and container */
+body.active .card {
+    right: 0;
+}
+
+body.active .container {
+    transform: translateX(-250px);
+}
+
+.card h1 {
+    color: #F8F9FA;
+    font-weight: 300;
+    margin: 0;
+    padding: 25px 30px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 2rem;
+}
+
+.card .listCard {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  padding-left: 0;
+}
+
+.card .listCard li {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px 80px;
+    gap: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card .listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card .listCard li img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card .listCard li .name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.card .listCard li .price {
+    font-weight: 700;
+    color: #FF6B6B;
+}
+
+.card .listCard li button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card .listCard li button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card .listCard .count {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+/* Checkout Section */
+.card .checkOut {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card .checkOut div {
+    background-color: #4A90E2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.card .checkOut .total {
+    background-color: #FF6B6B;
+}
+
+.card .checkOut div:hover {
+    filter: brightness(1.1);
+}
+
+.card .checkOut .closeShopping {
+    background-color: #212529;
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .list .item img {
+        height: 200px;
+    }
+
+    .list .item .title {
+        font-size: 1.1rem;
+    }
+
+    .list .item .price {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 100vw;
+        right: -100vw;
+    }
+
+    body.active .card {
+        right: 0;
+    }
+
+    body.active .container {
+        transform: translateX(0);
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .card .listCard {
+        padding: 15px 20px;
+    }
+
+    .card .listCard li {
+        grid-template-columns: 60px 1fr 60px 60px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card .listCard li img {
+        height: 60px;
+    }
+
+    .card .listCard li .name {
+        font-size: 0.9rem;
+    }
+
+    .card .listCard li .price {
+        font-size: 0.9rem;
+    }
+
+    .card .listCard li button {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+    }
+
+    .card .checkOut div {
+        height: 60px;
+        font-size: 1rem;
+    }
+}
+
+/* Ensure Inter font is loaded */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
